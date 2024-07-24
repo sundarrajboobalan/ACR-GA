@@ -16,9 +16,9 @@ jobs:
 
     - uses: azure/docker-login@v1
       with:
-        login-server: cloudquickstartregistry.azurecr.io
+        login-server: niqacr.azurecr.io
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
     - run: |
-        docker build . -t cloudquickstartregistry.azurecr.io/myapp:1.0.0
-        docker push cloudquickstartregistry.azurecr.io/myapp:1.0.0
+        docker build . -t niqacr.azurecr.io/myapp:1.0.0
+        docker push niqacr.azurecr.io/myapp:1.0.0
