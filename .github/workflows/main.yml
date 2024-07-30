@@ -1,4 +1,4 @@
-name: Build and Deploy Container App
+name: Build and Deploy Container in ACR
 
 on:
   workflow_dispatch:
