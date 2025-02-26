@@ -16,9 +16,9 @@ jobs:
 
     - uses: azure/docker-login@v1
       with:
-        login-server: acrga.azurecr.io
+        login-server: acrgademo.azurecr.io
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
     - run: |
-        docker build . -t acrga.azurecr.io/app1
-        docker push acrga.azurecr.io/app1
+        docker build . -t acrgademo.azurecr.io/app1
+        docker push acrgademo.azurecr.io/app1
