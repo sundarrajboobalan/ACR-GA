@@ -16,9 +16,9 @@ jobs:
 
     - uses: azure/docker-login@v1
       with:
-        login-server: niqdiscover.azurecr.io
+        login-server: niqacr.azurecr.io
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
     - run: |
-        docker build . -t niqdiscover.azurecr.io/discover1
-        docker push niqdiscover.azurecr.io/discover1
+        docker build . -t niqacr.azurecr.io/discover1
+        docker push niqacr.azurecr.io/discover1
