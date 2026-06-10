@@ -21,6 +21,7 @@ jobs:
         password: ${{ secrets.REGISTRY_PASSWORD }}
     - run: |
         docker build . -t niqacr.azurecr.io/discover
+        docker push niqacr.azurecr.io/discover
 
 
 
@@ -115,5 +116,5 @@ jobs:
 
         
        
-        docker push niqdemoacr.azurecr.io/discover
+        
   
